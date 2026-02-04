@@ -1,6 +1,6 @@
 conjunto = str(input("Validação de Parênteses\nDigite sua string: "))
 vetor = list(conjunto)
-
+ 
 #De cara, se não for par alguma coisa ta errada
 if (len(vetor) % 2 != 0):
     print("❌ Inválido (faltou fechar)")
