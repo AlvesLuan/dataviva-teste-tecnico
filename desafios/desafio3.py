@@ -1,14 +1,15 @@
-def encontrar_duplicado(lista):
-    #coloca o conjunto de numeros em uma hashSet
+def duplicados(lista):
+    #cria 2 hashsets, uma pra todos os numeros e outra apenas pra duplicados
     numeros = set()
-    
-    #busca no hashset
-    for numero_atual in lista:
-        if numero_atual in numeros:
-            return numero_atual
-        numeros.add(numero_atual)
-    
-    return "não há repetidos"  
+    duplicados = set()  
 
-verificação = encontrar_duplicado([1, 2, 3, 4, 5, 6])
-print(verificação) 
+    #comparo o elemento atual com a set de numeros que esta sendo alimntada por esse for
+    for num_atual in lista:
+        if num_atual in numeros:
+            duplicados.add(num_atual)
+        else:
+            numeros.add(num_atual)
+
+    return list(duplicados)
+
+print(duplicados([1, 2, 3, 2, 5]))
