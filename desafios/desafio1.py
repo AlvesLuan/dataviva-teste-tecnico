@@ -1,4 +1,4 @@
-for i in range(1, 101):
+for i in range(1, 101): 
     tipo = ""
     if i % 3 == 0:
         tipo += "Fizz"
