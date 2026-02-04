@@ -5,6 +5,7 @@ for i in range(1, 101):
     if i % 5 == 0:
         tipo += "Buzz"
 
-    print(i, tipo) #estrategia de formatar meu print
+    print(i, tipo) 
     
+    #estrategia de formatar meu print
     #quebra de linha do python***
