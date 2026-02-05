@@ -1,11 +1,7 @@
-for i in range(1, 101): 
-    tipo = ""
+for i in range(1, 101):
+    texto = ""
     if i % 3 == 0:
-        tipo += "Fizz"
+        texto += "Fizz"
     if i % 5 == 0:
-        tipo += "Buzz"
-
-    print(i, tipo) 
-    
-    #estrategia de formatar meu print
-    #quebra de linha do python***
+        texto += "Buzz"
+    print(texto if texto else i) #só printa Fizz, Buzz ou FizzBuzz se a condicional alimentar a variavel texto
