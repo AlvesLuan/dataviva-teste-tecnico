@@ -1,8 +1,7 @@
-def Validacao_de_Parenteses(conjunto):
-    vetor = list(conjunto)
-
+def validacao_de_parenteses(conjunto):
+    
     #De cara, se não for par alguma coisa ta errada
-    if (len(vetor) % 2 != 0):
+    if (len(conjunto) % 2 != 0):
         print("❌ Inválido")
         return
 
@@ -17,7 +16,7 @@ def Validacao_de_Parenteses(conjunto):
             '}': '{'
         } 
 
-        for simboloAtual in vetor:
+        for simboloAtual in conjunto:
             if simboloAtual in '([{':
                 pilha.append(simboloAtual)
 
@@ -37,4 +36,4 @@ def Validacao_de_Parenteses(conjunto):
 
 
 a_ser_validado = str(input("Validação de Parênteses\nDigite sua string: "))
-Validacao_de_Parenteses(a_ser_validado)
+validacao_de_parenteses(a_ser_validado)
