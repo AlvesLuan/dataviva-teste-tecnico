@@ -1,9 +1,9 @@
 def e_palindromo(palavra):
-    #apenas comparo com a palavra inversa
-    if palavra == palavra[::-1]:
-        return "é palindromo!"
+    #apenas comparo com a palavra inversa usando slicing
+    if palavra == palavra[::-1]: 
+        return True
     else:
-        return "não é palindromo!" 
+        return False 
 
 a_ser_validado = str(input("digite sua palabra: "))
 resultado = e_palindromo(a_ser_validado)  
