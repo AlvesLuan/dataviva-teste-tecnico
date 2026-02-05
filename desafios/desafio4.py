@@ -3,10 +3,10 @@ def Validacao_de_Parenteses(conjunto):
 
     #De cara, se não for par alguma coisa ta errada
     if (len(vetor) % 2 != 0):
-        print("❌ Inválido (faltou fechar)")
+        print("❌ Inválido")
+        return
 
     else:
-        validador = True
         
         pilha = []
 
@@ -24,17 +24,16 @@ def Validacao_de_Parenteses(conjunto):
             elif simboloAtual in ')]}':
                 #verifica se a pilha ta vazia ou se o topo da pilha é igual ao seu par
                 if not pilha or pilha.pop() != pares[simboloAtual]:
-                    validador = False
-                    break
+                    print("❌ Inválido (ordem errada)")
+                    return
 
         #sobrou na pilha, ent tá errado
         if pilha:
-            validador = False
-
-        if validador:
-            print("✅ Válido")
+            print("❌ Inválido (falta fechar)")
         else:
-            print("❌ Inválido")
+            print("✅ Válido")
+        
+            
 
 
 a_ser_validado = str(input("Validação de Parênteses\nDigite sua string: "))
