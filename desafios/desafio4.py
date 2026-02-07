@@ -17,11 +17,13 @@ def validacao_de_parenteses(conjunto):
         } 
 
         for simboloAtual in conjunto:
+            #Se é abridor ent vai pra pilha
             if simboloAtual in '([{':
                 pilha.append(simboloAtual)
 
+            #Se é fechador ent desempilha a pilha
             elif simboloAtual in ')]}':
-                #verifica se a pilha ta vazia ou se o topo da pilha é igual ao seu par
+                #verifica se a pilha ta vazia ou se o fechador n bate com a relação do dicionario
                 if not pilha or pilha.pop() != pares[simboloAtual]:
                     print("❌ Inválido (ordem errada)")
                     return
