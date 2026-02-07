@@ -4,6 +4,7 @@ def duplicados(lista):
     repetidos = set()  
     
     #comparo o elemento atual com a set de numeros que esta sendo alimntada por esse for
+    #for each pra percorrer a lista e condicionais pra verificar se tá repetido ou n
     for num_atual in lista:
         if num_atual in numeros:
             repetidos.add(num_atual)
