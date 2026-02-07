@@ -1,8 +1,8 @@
-def somar_categorias(lista):
+def somar_categorias(lista_dicio):
     #criei um dicionario vazio que vai ser alimentado com a categoria e ao lado sua soma total
     totais_por_categoria = {}
 
-    for elemento in lista:
+    for elemento in lista_dicio:
         #só extraio as info de cada dicionário da lista que foi passada
         categoria = elemento["categoria"]
         valor = elemento["valor"]
