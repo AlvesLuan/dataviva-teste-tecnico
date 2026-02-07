@@ -3,12 +3,13 @@ def somar_categorias(lista):
     totais_por_categoria = {}
 
     for elemento in lista:
+        #só extraio as info de cada dicionário da lista que foi passada
         categoria = elemento["categoria"]
         valor = elemento["valor"]
 
         if categoria in totais_por_categoria:
             totais_por_categoria[categoria] += valor
-        else: #primeira aparicao de cada categoria vai levar direto pro dicionario já q ela n existe, se ja existir entra no if de cima e só pega o valor e soma.
+        else: #primeira aparicao de cada categoria vai levar direto pro dicionario de result já q ela n existe, se ja existir entra no if de cima e só pega o valor e soma.
             totais_por_categoria[categoria] = valor
 
     return totais_por_categoria
