@@ -1,4 +1,4 @@
-# Desafio Técnico - DataViva
+# Desafio Técnico - DataViva 🚀🧩
 
 Este repositório contém a solução dos quatro desafios+bonus, todos estes desenvolvidos em **Python**.
 
